@@ -1,0 +1,97 @@
+/* Lesson 4 */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.card:hover {
+  background: green;
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background-color: purple;
+}
+
+input {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: red;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+button {
+  background-color: greenyellow;
+}
+
+button:enabled {
+  background-color: rgb(2, 103, 20);
+}
+
+button:disabled {
+  background-color: aqua;
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+.inp:read-only {
+  background-color: rgb(190, 81, 13);
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: rgb(211, 28, 138);
+}
+
+.valid:optional {
+  background: blue;
+}
+
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: green;
+}
+
+.number:invalid {
+  background: rgb(211, 211, 147);
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
+}

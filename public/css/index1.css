@@ -1,0 +1,32 @@
+.card-dark {
+  background: #868383;
+}
+
+.item {
+  color: green;
+}
+
+/* .item:first-child {
+  color: blue;
+} */
+
+.item:first-of-type {
+  color: rgb(223, 18, 69);
+}
+
+.item:only-of-type {
+  color: rgb(59, 11, 250);
+}
+
+/* .item:nth-last-of-type(2n) {
+  color: yellow;
+} */
+
+p:not(.item) {
+  color: rgb(86, 0, 165);
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}

@@ -1,7 +1,82 @@
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
+
+  background: blue;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: rgb(17, 219, 17);
+}
+
+h1 {
+  color: yellow;
+}
+
+.box {
+  background: rgb(151, 151, 233);
+}
+
+#user,
+.user {
+  color: rgb(3, 3, 73);
+}
+
+h1,
+h2#user,
+button.button#button {
+  color: rgb(47, 250, 206);
+}
+
+button.button {
+  background: red;
+  color: rgb(0, 0, 0);
+}
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+div > p {
+  color: paleturquoise;
+}
+
+footer > .user {
+  color: palevioletred;
+}
+
+footer > h1 {
+  color: rgb(174, 11, 65);
+}
+
+footer em {
+  color: rgb(201, 228, 21);
+}
+
+footer > p > em {
+  color: rgb(69, 13, 160);
+}
+
+footer .child {
+  color: rgb(232, 115, 32);
+}
+
+.p-top {
+  background: rgb(235, 204, 204);
+}
+
+h1 + p {
+  background: rgb(77, 74, 74);
 }

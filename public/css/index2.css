@@ -1,0 +1,87 @@
+.card-dark {
+  background: #868383;
+}
+
+.item {
+  color: green;
+}
+
+/* .item:first-child {
+  color: blue;
+} */
+
+.item:first-of-type {
+  color: rgb(223, 18, 69);
+}
+
+.item:only-of-type {
+  color: rgb(59, 11, 250);
+}
+
+/* .item:nth-last-of-type(2n) {
+  color: yellow;
+} */
+
+p:not(.item) {
+  color: rgb(86, 0, 165);
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}
+
+.input-dark {
+  background: rgb(72, 18, 199);
+}
+
+.input-dark[required] {
+  background: rgb(193, 15, 15);
+}
+
+.input-dark[type='number'] {
+  background: rgb(103, 60, 60);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+a[rel~='external'] {
+  height: 500px;
+}
+
+button[class|='btn'] {
+  background: rgb(58, 58, 122);
+}
+
+/* a[class^='btn'] {
+  background: rgb(44, 31, 184);
+} */
+
+a[class$='big'] {
+  background: rgb(16, 217, 29);
+}
+
+.btn::first-letter {
+  color: red;
+}
+.big-text::first-line {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: green;
+  background: blue;
+}
+
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: blue;
+}
+
+.big-text::after {
+  content: '!!!';
+  color: blue;
+  background: green;
+}

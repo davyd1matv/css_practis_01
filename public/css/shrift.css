@@ -1,0 +1,67 @@
+/* p {
+  background: rgba(49, 22, 199);
+} */
+
+.card {
+  color: red;
+}
+
+.card > p {
+  color: rgb(195, 39, 8);
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(211, 225, 14);
+  -webkit-text-stroke: 1px rgb(255, 34, 237);
+  direction: rtl;
+}
+
+#test {
+  color: blue;
+  -webkit-text-fill-color: rgb(21, 208, 39);
+  -webkit-text-stroke: 1px rgb(73, 215, 208);
+
+  /* writing-mode: vertical-lr; */
+  text-align: justify;
+
+  letter-spacing: 0.01em;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  text-decoration: line-through solid red;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+pre {
+  tab-size: 3;
+}
+
+* {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
+}
+
+span {
+  font-size: larger;
+
+  font-weight: lighter;
+
+  /* font-style: oblique; */
+}
+
+/* .test {
+  font-weight: lighter;
+} */
