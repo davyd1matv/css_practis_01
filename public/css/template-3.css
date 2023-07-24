@@ -2,6 +2,7 @@
   --space-m: 12px;
   --space-xm: 16px;
   --space-l: 24px;
+  --space-b: 36px;
 
   --size-s: 14px;
   --size-d: 16px;
@@ -14,6 +15,9 @@
   --color-text: #343a40;
 
   --border-radius: 12px;
+
+  --weight-title: 500;
+  --weight-text: 400;
 }
 
 /* ======================= */
@@ -114,18 +118,22 @@
 
   display: block;
   margin-bottom: var(--space-l);
+
+  font-weight: var(--weight-title);
 }
 
 .hero {
   display: flex;
   gap: 36px;
   align-items: center;
+
+  padding: var(--space-b);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .hero_image {
   width: 500px;
   height: 500px;
-
   border-radius: var(--border-radius);
 }
 
@@ -138,17 +146,99 @@
 .hero_title {
   font-size: 50px;
   color: var(--color-title);
-  font-weight: 500;
+  font-weight: var(--weight-title);
   line-height: 120%;
 }
 
 .hero_text {
   font-size: var(--size-l);
   color: var(--color-text);
-  font-weight: 400;
+  font-weight: var(--weight-text);
   line-height: 170%;
 }
 
-/* .blog {
+.blog {
   display: flex;
-} */
+  gap: var(--space-b);
+
+  padding: var(--space-b);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-l);
+}
+
+.card_image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.card_title {
+  font-size: 32px;
+  font-weight: var(--weight-title);
+  color: var(--color-title);
+}
+
+.card_text {
+  font-weight: var(--weight-title);
+  font-size: var(--size-d);
+  color: var(--color-text);
+}
+
+.button {
+  display: inline-block;
+  font-size: var(--size-d);
+  text-decoration: none;
+  padding: var(--space-m) var(--space-xm);
+  border-radius: var(--border-radius);
+}
+
+.card_button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--color-primary);
+  padding: var(--space-l);
+  border-radius: var(--border-radius);
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.form_title {
+  font-size: 27px;
+  font-weight: var(--weight-title);
+  color: var(--color-white);
+}
+
+.form_info {
+  font-size: var(--size-d);
+  font-weight: var(--weight-text);
+  color: var(--color-white);
+}
+
+.form_button {
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 160px;
+  color: var(--color-text);
+}
