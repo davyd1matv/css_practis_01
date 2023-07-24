@@ -22,7 +22,11 @@
 </div>
 {{/with}}
 
-<main class="blog">Blog</main>
+<main class="blog">
+	{{#each blog}}
+	{{> cardBlog data=this}}
+	{{/each}}
+</main>
 
 <div class="form">Form</div>
 
