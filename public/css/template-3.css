@@ -1,10 +1,18 @@
-@layer normalize, style, component, main;
+@import '/css/var.css';
 
-@layer style {
-  .card_button {
-    background: red;
-  }
+@font-face {
+  font-family: 'Segment';
+  src: url('/font/Segment-Regular.otf');
+  font-weight: 400;
 }
+
+@font-face {
+  font-family: 'Segment';
+  src: url('/font/Segment-SemiBold.otf');
+  font-weight: 600;
+}
+
+@layer normalize, style, component, main;
 
 @keyframes fly {
   from {
@@ -36,30 +44,6 @@
 
     background: purple;
   }
-}
-
-:root {
-  --space-m: 12px;
-  --space-xm: 16px;
-  --space-l: 24px;
-  --space-b: 36px;
-
-  --size-s: 14px;
-  --size-d: 16px;
-  --size-l: 20px;
-
-  --color-border: #dee2e6;
-  --color-primary: rgb(46, 46, 255);
-  --color-white: #fff;
-  --color-title: #212529;
-  --color-text: #343a40;
-
-  --border-radius: 12px;
-
-  --weight-title: 500;
-  --weight-text: 400;
-
-  --page-width: 960px;
 }
 
 /* ======================= */
@@ -487,4 +471,39 @@
   .hero {
     flex-direction: column;
   }
+}
+
+@layer style {
+  .card_button {
+    background: red;
+  }
+}
+
+@layer main {
+  .card_button {
+    background: yellow;
+  }
+}
+
+.ex {
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 2ex;
+
+  line-height: 1.5em;
+}
+
+/* .test {
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+
+  height: 100vmax;
+  width: 100vmax;
+  z-index: 9999;
+} */
+
+.hero_title {
+  font-size: 5cqw;
 }
