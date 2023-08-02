@@ -7,8 +7,8 @@
 	</title>
 	<meta charset='utf-8' />
 
-	{{!--
-	<link href='css/normalize.css' rel='stylesheet' /> --}}
+
+	<link href='css/normalize.css' rel='stylesheet' />
 
 	<link href='css/slack.css' rel='stylesheet' />
 </head>
@@ -16,20 +16,27 @@
 <body>
 
 	<div class="page">
-		<div class="page_section">
+		<section class="page_section">
 			<div class="page_content hero_section">
 
 				<div class="hero">
-					<span class="hero_label">Slack Features</span>
-					<h1 class="herp_title">One platform for your team and your work</h1>
-					<p class="hero_info">All the features of Slack work together so you can, too.</p>
-					<div class="hero_buttons">
-						<a href="#" class="button button_primary">Try for free</a>
-						<a href="#" class="button button_secondary">See all features</a>
+					<div class="hero_content">
+						<span class="hero_label">Slack Features</span>
+
+						<h1 class="herp_title">One platform for your team and your work</h1>
+
+						<p class="hero_info">All the features of Slack work together so you can, too.</p>
+
+						<div class="hero_buttons">
+							<a href="#" class="button button_primary">Try for free</a>
+							<a href="#" class="button button_secondary">See all features</a>
+						</div>
+
+						<img src="/img/hero.png" alt="Hero" class="hero_image">
 					</div>
 				</div>
 
-				<img src="/img/hero.png" alt="" class="hero_image">
+
 
 				<div class="brands">
 					<img src="/img/brands/airbnb.png" alt="" class="brands_image">
@@ -43,7 +50,24 @@
 				</div>
 
 			</div>
-		</div>
+		</section>
+
+		<section class="page_section">
+			<div class="page_content features_section">
+				<h2 class="features_title">Work more easily with everyone</h2>
+				<p class="features_description">Stay on the same page and make decisions faster by bringing all of your
+					work communication into one place.</p>
+
+				<div class="feat_card">
+					<span class="icon feat_icon" style="background-image: url('/svg/features/connect.svg')"></span>
+					<strong class="feat_card_title">Slack Connect</strong>
+					<p class="feat_card_description">Collaborate with teams at other companies the same way you do with
+						teams at your own.</p>
+					<span class="icon icon_arrow"></span>
+				</div>
+			</div>
+		</section>
+
 	</div>
 
 </body>
