@@ -11,6 +11,9 @@
 	<link href='css/normalize.css' rel='stylesheet' />
 
 	<link href='css/slack.css' rel='stylesheet' />
+
+	<meta name="viewport"
+		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
 <body>
@@ -23,13 +26,13 @@
 					<div class="hero_content">
 						<span class="hero_label">Slack Features</span>
 
-						<h1 class="herp_title">One platform for your team and your work</h1>
+						<h1 class="hero_title">One platform for your team and your work</h1>
 
-						<p class="hero_info">All the features of Slack work together so you can, too.</p>
+						<p class="hero_info double_line">All the features of Slack work together so you can, too.</p>
 
 						<div class="hero_buttons">
-							<a href="#" class="button button_primary">Try for free</a>
-							<a href="#" class="button button_secondary">See all features</a>
+							<a href="#" class="button button_primary click">Try for free</a>
+							<a href="#" class="button button_secondary click">See all features</a>
 						</div>
 
 						<img src="/img/hero.png" alt="Hero" class="hero_image">
@@ -52,18 +55,63 @@
 			</div>
 		</section>
 
-		<section class="page_section">
+		<section class="page_section page_section_light">
 			<div class="page_content features_section">
+				{{!-- <img src="/img/features.png" alt="Feat" class="features_image"> --}}
 				<h2 class="features_title">Work more easily with everyone</h2>
-				<p class="features_description">Stay on the same page and make decisions faster by bringing all of your
+				<p class="features_description double_line">Stay on the same page and make decisions faster by bringing
+					all of your
 					work communication into one place.</p>
 
-				<div class="feat_card">
-					<span class="icon feat_icon" style="background-image: url('/svg/features/connect.svg')"></span>
-					<strong class="feat_card_title">Slack Connect</strong>
-					<p class="feat_card_description">Collaborate with teams at other companies the same way you do with
-						teams at your own.</p>
-					<span class="icon icon_arrow"></span>
+				<div class="features_grid_4">
+
+					<div class="feat_card">
+						<span class="icon feat_icon" style="background-image: url('/svg/features/connect.svg')"></span>
+						<strong class="feat_card_title">Slack Connect</strong>
+						<p class="double_line">Collaborate with teams at other companies the same way you do
+							with
+							teams at your own.</p>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon" style="background-image: url('/svg/features/channels.svg')"></span>
+						<strong class="feat_card_title">Channels</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon" style="background-image: url('/svg/features/huddles.svg')"></span>
+						<strong class="feat_card_title">Huddles</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon" style="background-image: url('/svg/features/clips.svg')"></span>
+						<strong class="feat_card_title">Clips</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon" style="background-image: url('/svg/features/canvas.svg')"></span>
+						<strong class="feat_card_title">Canvas</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon"
+							style="background-image: url('/svg/features/messaging.svg')"></span>
+						<strong class="feat_card_title">Messaging</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
+					<div class="feat_card">
+						<span class="icon feat_icon"
+							style="background-image: url('/svg/features/accessibility.svg')"></span>
+						<strong class="feat_card_title">Accessibility</strong>
+						<a class="icon icon_arrow click feat_link"></a>
+					</div>
+
 				</div>
 			</div>
 		</section>

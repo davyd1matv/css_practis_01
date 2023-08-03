@@ -1,3 +1,5 @@
+@layer normalize, style, component, main;
+
 @layer normalize {
   /* Document
    ========================================================================== */
