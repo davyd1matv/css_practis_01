@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Dashboard page
+	</title>
+	<meta charset='utf-8' />
+
+
+	<link href='css/normalize.css' rel='stylesheet' />
+
+	<link href='css/dashboard.css' rel='stylesheet' />
+
+	<meta name="viewport"
+		content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<div class="page page--dashboard">
+		<aside class="page_aside aside vertical vertical--big">
+			<div class="text aside_logo">
+				Sidebar
+			</div>
+			<nav class="vertical verical--small">
+				<a href="#" class="nav-button nav-button--active click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
+					<span class="text text--light">Home</span>
+				</a>
+
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg')"></span>
+					<span class="text text--light">Orers</span>
+				</a>
+
+				<a href="#" class="nav-button click">
+					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
+					<span class="text text--light">Products</span>
+				</a>
+
+				<div class="reletive click">
+					<div class="field field--select">
+						<span class="text text--light">Chose...</span>
+					</div>
+					<select class="field__select">
+						<option value="dog">Dog</option>
+						<option value="cat">Cat</option>
+						<option value="hamster">Hamster</option>
+						<option value="parrot">Parrot</option>
+						<option value="spider">Spider</option>
+					</select>
+				</div>
+			</nav>
+		</aside>
+		<header class="header">
+			<div class="layout header__content text--small">
+				<div class="header_search reletive">
+					<input type="text" class="text field field--header" placeholder="Search">
+					<span class="icon header__icon-search"
+						style="background-image: url('/svg/header/search.svg')"></span>
+					<span class="icon icon--header-settings icon-button icon--color-blue click"
+						style="background-image: url('/svg/header/settings.svg')"></span>
+				</div>
+
+				<div class="header_right">
+					<span class="icon_2 header__icon-wifi icon-button-right icon--color-yellow click"
+						style="background-image: url('/svg/header/wifi.svg')"></span>
+					<span class="icon_2 icon--header-land icon-button-right icon--color-blue-light click"
+						style="background-image: url('/svg/header/land.svg')"></span>
+					<span class="icon_2 icon--header-bell icon-button-right icon--color-yellow click"
+						style="background-image: url('/svg/header/bell.svg')"></span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main__top">
+				<div class="layout">
+					<sectiom class="box analitic__block">
+						<div class="analitic analitic--double analitic--blue">
+							<span class="icon analitic__button icon-button icon--color-blue click"
+								style="background-image: url('/svg/analitic/order.svg')"></span>
+
+							<div class="reletive vertical vertical--small">
+								<div class="analitic__title text text--light">$961</div>
+								<div class="text text--small text--lighter">Total Order</div>
+
+								<span class="icon analitic__arrow"
+									style="background-image: url('/svg/analitic/blue-arrow.svg')"></span>
+							</div>
+						</div>
+
+						<div class="analitic analitic--double analitic--purple">
+							<span class="icon analitic__button icon-button icon--color-purple click"
+								style="background-image: url('/svg/analitic/price.svg')"></span>
+
+							<div class="reletive vertical vertical--small">
+								<div class="analitic__title text text--light">$500.00</div>
+								<div class="text text--small text--lighter">Total earning</div>
+							</div>
+						</div>
+
+						<div class="analitic analitic--one analitic--blue">
+							<span class="icon analitic__button icon-button icon--color-blue click"
+								style="background-image: url('/svg/analitic/order.svg')"></span>
+
+							<div class="reletive vertical vertical--small">
+								<div class="analitic__title-mini text text--light">$203k</div>
+								<div class="text text--small text--lighter">Total Income</div>
+							</div>
+						</div>
+
+						<div class="analitic analitic--one analitic--none">
+							<span class="icon analitic__button icon-button icon--color-yellow click"
+								style="background-image: url('/svg/analitic/shop.svg')"></span>
+
+							<div class="reletive vertical vertical--small">
+								<div class="analitic__title-mini text">$203k</div>
+								<div class="text text--small text--grey">Total Income</div>
+							</div>
+						</div>
+					</sectiom>
+				</div>
+			</div>
+
+			<div class="main__left">
+				<div class="layout">
+					<sectiom class="box info__block">
+						<div class="info__line">
+							<div class="text info__title">Purchase list</div>
+
+							{{!-- <div class="line__grey"></div> --}}
+						</div>
+						<div class="info__line">
+							<div class="info__block-inside">
+								<div class="info__mini-block">
+									<div class="text ">ID437661</div>
+									<div class="text ">May 11, 2023, 14:21</div>
+								</div>
+
+								<div class="info__mini-block">
+									<div class="text ">AirOn ProCam</div>
+									<div class="text ">7/8 USB Type-C</div>
+								</div>
+
+								<div class="info__mini-block">
+									<div class="text ">132.32 EUR</div>
+									<div class="text ">Not paid</div>
+								</div>
+
+								<div class="info__mini-block">
+									<div class="text ">Customer</div>
+									<div class="text ">robin@com.de</div>
+								</div>
+							</div>
+							{{!-- <div class="line__grey"></div> --}}
+						</div>
+
+						<div class="info__line">Test</div>
+					</sectiom>
+				</div>
+			</div>
+			{{!-- <div class="field">
+				<span class="text text--light">Chose...</span>
+			</div> --}}
+
+			<div class="main__right">
+				<div class="layout">
+					<sectiom class="box info__block">
+					</sectiom>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
