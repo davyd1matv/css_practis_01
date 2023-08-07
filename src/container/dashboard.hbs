@@ -52,6 +52,7 @@
 				</div>
 			</nav>
 		</aside>
+
 		<header class="header">
 			<div class="layout header__content text--small">
 				<div class="header_search reletive">
@@ -62,7 +63,7 @@
 						style="background-image: url('/svg/header/settings.svg')"></span>
 				</div>
 
-				<div class="header_right">
+				<div class="header_right reletive">
 					<span class="icon_2 header__icon-wifi icon-button-right icon--color-yellow click"
 						style="background-image: url('/svg/header/wifi.svg')"></span>
 					<span class="icon_2 icon--header-land icon-button-right icon--color-blue-light click"
@@ -125,38 +126,67 @@
 
 			<div class="main__left">
 				<div class="layout">
-					<sectiom class="box info__block">
-						<div class="info__line">
-							<div class="text info__title">Purchase list</div>
+					<sectiom class="box info__block-l">
 
-							{{!-- <div class="line__grey"></div> --}}
+						<div class="info_padding">
+							<div class="text info__title vertical verticcal-small">Purchase list</div>
 						</div>
-						<div class="info__line">
+
+						<div class="info_padding">
+							<div class="line__grey"></div>
+						</div>
+
+						<div class="info_padding">
 							<div class="info__block-inside">
-								<div class="info__mini-block">
-									<div class="text ">ID437661</div>
-									<div class="text ">May 11, 2023, 14:21</div>
+								<div class="info__mini-block vertical verticcal-small">
+									<div class="text id--info">ID437661</div>
+									<div class="text id--info">May 11, 2023, 14:21</div>
 								</div>
 
-								<div class="info__mini-block">
+								<div class="info__mini-block vertical verticcal-small">
 									<div class="text ">AirOn ProCam</div>
 									<div class="text ">7/8 USB Type-C</div>
 								</div>
 
-								<div class="info__mini-block">
+								<div class="info__mini-block vertical verticcal-small">
 									<div class="text ">132.32 EUR</div>
-									<div class="text ">Not paid</div>
+									<div class="text text--warning">Not paid</div>
 								</div>
 
-								<div class="info__mini-block">
+								<div class="info__mini-block vertical verticcal-small">
 									<div class="text ">Customer</div>
 									<div class="text ">robin@com.de</div>
 								</div>
 							</div>
-							{{!-- <div class="line__grey"></div> --}}
 						</div>
 
-						<div class="info__line">Test</div>
+						<div class="info_padding">
+							<div class="line__grey"></div>
+						</div>
+
+						<div class="info_padding">
+							<div class="info__block-inside">
+								<div class="info__mini-block vertical verticcal-small">
+									<div class="text ">ID437661</div>
+									<div class="text ">May 11, 2023, 14:21</div>
+								</div>
+
+								<div class="info__mini-block vertical verticcal-small">
+									<div class="text ">PHILIPS Essential</div>
+									<div class="text ">HD9200/90</div>
+								</div>
+
+								<div class="info__mini-block vertical verticcal-small">
+									<div class="text ">543 USD</div>
+									<div class="text text--success">Pay by Stripe</div>
+								</div>
+
+								<div class="info__mini-block vertical verticcal-small">
+									<div class="text ">Customer</div>
+									<div class="text ">robin@com.de</div>
+								</div>
+							</div>
+						</div>
 					</sectiom>
 				</div>
 			</div>
@@ -166,10 +196,97 @@
 
 			<div class="main__right">
 				<div class="layout">
-					<sectiom class="box info__block">
+					<sectiom class="box info__block-r">
+						<div class="text info__title vertical verticcal-small">Purchase list</div>
+
+						<div class="line__grey"></div>
+
+						<div class="info__veriable">
+							<div>
+								<input type="radio" id="contactChoice1" name="contact" />
+								<label for="contactChoice1">Credit card</label>
+							</div>
+							{{!-- <div type="text" class="checkbox"></div> --}}
+							{{!-- <div class="text">Credit card</div> --}}
+
+							<div>
+								<input type="radio" id="contactChoice2" name="contact" />
+								<label for="contactChoice2">Debit card</label>
+							</div>
+							{{!-- <div class="text">Debit card</div> --}}
+
+							<div>
+								<input type="radio" id="contactChoice3" name="contact" />
+								<label for="contactChoice3">PayPal</label>
+							</div>
+							{{!-- <div class="text">PayPal</div> --}}
+						</div>
+
+						<div class="info__card-input">
+							<div class="info__input">
+								<div class="text info--padding">Name of card</div>
+								<input type="text" class="text info-field field--header">
+							</div>
+
+							<div class="info__input">
+								<div class="text info--padding">Credit card number</div>
+								<input type="text" class="text info-field field--header">
+							</div>
+						</div>
+
+						<div class="info__card-input">
+							<div class="info__input">
+								<div class="text info--padding">Expiration</div>
+								<input type="text" class="text info-field field--header">
+							</div>
+
+							<div class="info__input">
+								<div class="text info--padding">CVV</div>
+								<input type="text" class="text info-field field--header">
+							</div>
+						</div>
+
+						<div class="line__grey"></div>
+
+						<div class="info__card-input">
+							<div class="info__input">
+								<div class="text info--padding">Country</div>
+								<div class="reletive click">
+									<div class="info-field field--select">
+										<span class="text">Chose...</span>
+									</div>
+									<select class="field__select info-field">
+										<option value="ukrain">Ukrain</option>
+										<option value="united_kingdom">United kingdom</option>
+										<option value="usa">USA</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="info__input">
+								<div class="text info--padding">State</div>
+								<div class="reletive click">
+									<div class="info-field field--select">
+										<span class="text">Chose...</span>
+									</div>
+									<select class="field__select info-field">
+										<option value="ukrain">Ukrain</option>
+										<option value="united_kingdom">United kingdom</option>
+										<option value="usa">USA</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="line__grey"></div>
+
+						<button class="info__button click">
+							<div class="text text--light">Continue to checkout</div>
+						</button>
 					</sectiom>
 				</div>
 			</div>
+
 		</main>
 	</div>
 </body>
